@@ -16,15 +16,17 @@
 
 pluginManagement {
     repositories {
+        mavenLocal()
         mavenCentral()
         gradlePluginPortal().content {
-            it.includeModule("org.jetbrains.kotlin.jvm", "org.jetbrains.kotlin.jvm.gradle.plugin")
+//            it.includeModule("org.jetbrains.kotlin.jvm", "org.jetbrains.kotlin.jvm.gradle.plugin")
         }
     }
 }
 
 dependencyResolutionManagement {
     repositories {
+        mavenLocal()
         mavenCentral()
         gradlePluginPortal().content {
             it.includeModule("com.gradle", "gradle-enterprise-gradle-plugin")

@@ -23,6 +23,14 @@ plugins {
     id("kotlin")
 }
 
+allprojects {
+    repositories {
+        mavenLocal()
+        google()
+        jcenter()
+    }
+}
+
 dependencies {
     compileOnly(libs.kotlinStdlib)
     compileOnly(libs.kotlinCompiler)
